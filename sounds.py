@@ -1,4 +1,4 @@
-# step eight
+# step nine
 # adding sounds
 
 import pygame
