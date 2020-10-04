@@ -1,3 +1,6 @@
+# step seven
+# create multiple aliens
+
 import pygame
 import random
 import math
