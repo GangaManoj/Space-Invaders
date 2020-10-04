@@ -1,5 +1,5 @@
 # step five
-# shooting a single bullet
+# shooting bullets
 
 import pygame
 import random
@@ -94,6 +94,9 @@ while running:
     alien(alienX, alienY)
 
     #bullet movement
+    if bulletY <= 0:
+        bulletY = 480
+        bullet_state = "ready"
     if bullet_state == "fired":
         fire_bullet(playerX, bulletY)
         bulletY -= bullet_dy
