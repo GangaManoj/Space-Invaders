@@ -69,8 +69,9 @@ while running:
             if event.key == pygame.K_RIGHT:  # checks if the key pressed was the right arrow key
                 player_dx = 3
             if event.key == pygame.K_SPACE:
-                bulletX = playerX
-                fire_bullet(bulletX, bulletY)
+                if bullet_state is "ready":
+                    bulletX = playerX
+                    fire_bullet(bulletX, bulletY)
 
         if event.type == pygame.KEYUP:  # checks if key was just released
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
