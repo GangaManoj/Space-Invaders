@@ -1,3 +1,6 @@
+# step eight
+# adding sounds
+
 import pygame
 import random
 import math
