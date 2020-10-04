@@ -1,3 +1,6 @@
+#step two
+#added a player that can move left or right
+
 import pygame
 
 #initialise pygame
