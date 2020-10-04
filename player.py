@@ -1,6 +1,3 @@
-#step two
-#added a player that can move left or right
-
 import pygame
 
 #initialise pygame
@@ -43,6 +40,11 @@ while running:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 dx = 0
 
+    #setting boundaries for the player
+    if playerX <= 0:
+        playerX = 0
+    elif playerX >= 736:
+        playerX = 736
     playerX += dx
     player(playerX, playerY)
     pygame.display.update() #mandatory line - updates the display continuously
