@@ -1,3 +1,6 @@
+#step three
+#added a moving enemy alien
+
 import pygame
 import random
 
